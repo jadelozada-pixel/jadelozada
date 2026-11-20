@@ -108,6 +108,33 @@
     @media (max-width: 560px) {
       .about-body { flex-direction: column; gap: 24px; }
     }
+    .clips {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .clips li {
+      padding: 0 0 22px;
+      margin: 0 0 22px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .clips li:last-child { border-bottom: none; margin-bottom: 0; }
+    .clips a {
+      display: inline;
+      font-family: var(--display);
+      font-size: 1.3rem;
+      line-height: 1.4;
+      color: var(--text);
+      border-bottom: none;
+    }
+    .clips a:hover { color: var(--link); }
+    .clip-meta {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--muted);
+    }
     a {
       color: var(--link);
       text-decoration: none;
