@@ -4,76 +4,100 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jade Lozada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5c5c5c;
-      --rule: #dddddd;
-      --link: #1f4e8c;
-      --placeholder-bg: #fff8e1;
-      --placeholder-border: #e0b400;
+      --text: #121212;
+      --muted: #5a5a5a;
+      --rule: #121212;
+      --hairline: #dcdcdc;
+      --link: #326891;
+      --placeholder-bg: #f7f4ec;
+      --placeholder-border: #b9a77a;
+      --display: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+      --body: "Source Serif 4", Georgia, "Times New Roman", serif;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #161616;
+        --bg: #141414;
         --text: #ececec;
-        --muted: #a8a8a8;
-        --rule: #333333;
-        --link: #8db8f0;
-        --placeholder-bg: #2b2510;
-        --placeholder-border: #b38f00;
+        --muted: #a6a6a6;
+        --rule: #ececec;
+        --hairline: #3a3a3a;
+        --link: #8fb8dc;
+        --placeholder-bg: #23201a;
+        --placeholder-border: #7d6f4c;
       }
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 56px 16px;
+      padding: 72px 16px 96px;
       background: var(--bg);
       color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.6;
+      font-family: var(--body);
+      font-size: 1.1875rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
     }
     main {
-      max-width: 680px;
+      max-width: 640px;
       margin: 0 auto;
     }
     header {
+      text-align: center;
+      border-top: 3px double var(--rule);
       border-bottom: 1px solid var(--rule);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
+      padding: 40px 0 32px;
+      margin-bottom: 64px;
     }
     h1 {
-      font-size: 2.75rem;
-      font-weight: normal;
-      line-height: 1.15;
-      margin: 0 0 8px;
+      font-family: var(--display);
+      font-size: clamp(2.5rem, 8vw, 3.75rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
     }
     .beat {
+      font-style: italic;
       font-size: 1.25rem;
       color: var(--muted);
       margin: 0;
     }
-    h2 {
-      font-size: 0.85rem;
-      font-family: Helvetica, Arial, sans-serif;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin: 0 0 12px;
-    }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 56px;
+    }
+    h2 {
+      font-family: var(--body);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text);
+      border-top: 1px solid var(--hairline);
+      padding-top: 16px;
+      margin: 0 0 20px;
+    }
+    p {
+      margin: 0 0 1.25em;
     }
     .placeholder {
       background: var(--placeholder-bg);
       border: 1px dashed var(--placeholder-border);
-      padding: 12px 16px;
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.95rem;
+      padding: 14px 18px;
+      font-style: italic;
+      color: var(--muted);
     }
     a {
       color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
     }
+    a:hover { color: var(--text); }
   </style>
 </head>
 <body>
