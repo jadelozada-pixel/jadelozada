@@ -11,21 +11,73 @@
       background: #ffffff;
       color: #1a1a1a;
       font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
     }
     main {
       max-width: 720px;
       margin: 0 auto;
     }
+    header {
+      margin-bottom: 48px;
+    }
     h1 {
       font-size: 2.75rem;
       font-weight: normal;
       margin: 0;
+      line-height: 1.2;
+    }
+    .beat {
+      font-size: 1.25rem;
+      color: #555555;
+      margin: 8px 0 0;
+    }
+    section {
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 8px;
+      margin: 0 0 16px;
+    }
+    .placeholder {
+      border: 2px dashed #c0392b;
+      color: #c0392b;
+      padding: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #1a1a1a;
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Jade Lozada</h1>
+    <header>
+      <h1>Jade Lozada</h1>
+      <p class="beat">Reporting fellow covering economics</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <!-- PLACEHOLDER: About text from Jade goes here. -->
+      <p class="placeholder">[About text to come — Jade will provide this.]</p>
+    </section>
+
+    <section id="clips">
+      <h2>Clips</h2>
+      <!-- PLACEHOLDER: Clips from Jade go here (headline, outlet, date for each). -->
+      <p class="placeholder">[Clips to come — Jade will provide these.]</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:jadelozada@washsun.com">jadelozada@washsun.com</a>.</p>
+    </section>
   </main>
 </body>
 </html>
