@@ -17,4 +17,5 @@ Keep the look of a classic newspaper or magazine page, like The New York Times o
 - Header: my name centered and large, my beat in italics below it, between a double rule above and a thin rule below.
 - Section labels (About, Clips, Contact): small uppercase letters with wide spacing, under a thin gray line.
 - Colors: near-black text on white, muted gray for secondary text, and a quiet blue for links. Keep the dark-mode version that matches.
-- No photos, icons or decoration I haven't asked for.
+- Headshot: my photo (images/headshot.jpg) sits to the left of my About text, 160px square with no frame or rounded corners, and moves above the text on phones.
+- No other photos, icons or decoration I haven't asked for.

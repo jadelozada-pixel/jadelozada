@@ -92,6 +92,22 @@
       font-style: italic;
       color: var(--muted);
     }
+    .about-body {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .headshot {
+      flex: 0 0 160px;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      margin-top: 6px;
+    }
+    .about-text { flex: 1; min-width: 0; }
+    @media (max-width: 560px) {
+      .about-body { flex-direction: column; gap: 24px; }
+    }
     a {
       color: var(--link);
       text-decoration: none;
@@ -109,9 +125,14 @@
 
     <section id="about">
       <h2>About</h2>
-      <p>I cover economic policy at The Washington Sun.</p>
-      <p>I previously interned on the Boston Globe’s metro desk, the investigations team at WGBH, the Associated Press’s United Nations bureau and Civil.ge, an independent news site in Tbilisi, Georgia.</p>
-      <p>I received my degree in social studies and Slavic languages and literature at Harvard College, where I served as magazine editor at large for The Harvard Crimson.</p>
+      <div class="about-body">
+        <img class="headshot" src="images/headshot.jpg" alt="Jade Lozada" width="160" height="160">
+        <div class="about-text">
+          <p>I cover economic policy at The Washington Sun.</p>
+          <p>I previously interned on the Boston Globe’s metro desk, the investigations team at WGBH, the Associated Press’s United Nations bureau and Civil.ge, an independent news site in Tbilisi, Georgia.</p>
+          <p>I received my degree in social studies and Slavic languages and literature at Harvard College, where I served as magazine editor at large for The Harvard Crimson.</p>
+        </div>
+      </div>
     </section>
 
     <section id="clips">
